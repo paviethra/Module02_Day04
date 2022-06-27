@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("./asset/BG.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(1.5px);
+    overflow: hidden;
+}
+.bulb_area{
+    width: 500px;
+    height: 700px;
+}
+.bulb-holder{
+    width: 50px;
+    height: 40px;
+    background: rgb(9, 9, 9);
+    position: absolute;
+    top: -70px;
+    left: -57px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform: translate(630px,120px);
+    z-index: 1;
+}
+.bulb{
+    width: 50px;
+    height: 20px;
+    background: #fff;
+    border-radius: 60%;
+    transform: translate(0px,30px);
+    animation: light 2000ms infinite cubic-bezier(1, -0.45, 0, 1.89);
+}
+#b1{
+    transform: translate(500px,200px);
+}
+#b2{
+    transform: translate(750px,200px);
+}
+#b3{
+    transform:  translate(1000px,200px);
+}
+
+@keyframes light{
+    10%{
+        box-shadow: 0 1px 10px yellow,
+                0 2px 20px yellow,
+                10px 20px 30px yellow,            
+                -10px 20px 30px yellow,            
+                30px 50px 50px yellow,          
+                -30px 50px 50px yellow;
+
+    }
+    20%{
+        box-shadow: none;
+    }
+    30%{
+        box-shadow: 0 1px 10px lightcoral,
+                0 2px 20px lightcoral,
+                10px 20px 30px lightcoral,            
+                -10px 20px 30px lightcoral,            
+                30px 50px 50px lightcoral,          
+                -30px 50px 50px lightcoral;
+
+    }
+    40%{
+        box-shadow: none;
+    }
+    50%{
+        box-shadow: 0 1px 10px aqua,
+                0 2px 20px aqua,
+                10px 20px 30px aqua,            
+                -10px 20px 30px aqua,            
+                30px 50px 50px aqua,          
+                -30px 50px 50px aqua;
+
+    }
+    60%{
+        box-shadow: none;
+    }
+    70%{
+        box-shadow: 0 1px 10px purple,
+                0 2px 20px purple,
+                10px 20px 30px purple,            
+                -10px 20px 30px purple,            
+                30px 50px 50px purple,          
+                -30px 50px 50px purple;
+
+    }
+    80%{
+        box-shadow: 0 1px 10px tomato,
+        0 2px 20px tomato,
+        10px 20px 30px tomato,            
+        -10px 20px 30px tomato,            
+        30px 50px 50px tomato,          
+        -30px 50px 50px tomato;
+    } 
+    90%{
+        box-shadow: 0 1px 10px yellow,
+        0 2px 20px yellow,
+        10px 20px 30px yellow,            
+        -10px 20px 30px yellow,            
+        30px 50px 50px yellow,          
+        -30px 50px 50px yellow,
+        40px 60px 100px yellow,          
+        -40px 60px 100px yellow,
+        70px 70px 100px yellow,          
+        -70px 70px 100px yellow;
+    }
+    100%{
+        box-shadow: 0 1px 10px yellow,
+        0 2px 20px yellow,
+        10px 20px 30px yellow,            
+        -10px 20px 30px yellow,            
+        30px 50px 50px yellow,          
+        -30px 50px 50px yellow,
+        40px 60px 100px yellow,          
+        -40px 60px 100px yellow,
+        70px 70px 100px yellow,          
+        -70px 70px 100px yellow;
+    }
+}
